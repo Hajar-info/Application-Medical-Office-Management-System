@@ -1,0 +1,10 @@
+
+
+medecin/doctor: 
+username: medecin  code: medecin
+
+admin:
+unsername: admin code: admin 
+
+secretaire/secretary: 
+username: secretaire code: secretaire

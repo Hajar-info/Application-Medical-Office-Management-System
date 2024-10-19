@@ -1,0 +1,13 @@
+<svg width="1127px" height="719px" viewBox="0 0 1127 719" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <defs>
+        <linearGradient x1="100%" y1="29.6492718%" x2="2.22044605e-14%" y2="70.3507282%" id="linearGradient-1">
+            <stop stop-color="#1C1945" offset="0.0475084459%"></stop>
+            <stop stop-color="#233388" offset="99.9287373%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="BG_Vagues" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Vague_Section_Dark-Blue_Droite" transform="translate(-313.000000, 0.000000)" fill="url(#linearGradient-1)">
+            <path d="M313,719 C892.299818,719 929.054101,80.961978 1439.49013,2.27373675e-13 C1439.02608,2.27373675e-13 1439.19604,239.666667 1440,719 L313,719 Z" id="Fill-4-Copy-2"></path>
+        </g>
+    </g>
+</svg>
