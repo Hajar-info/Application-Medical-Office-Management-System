@@ -22,8 +22,4 @@ This application is designed to facilitate the management of patients in a medic
   - **Bootstrap Framework:** Responsive design.
   - **HTML, CSS, JavaScript:** Frontend development.
 
-## Usage
-To get started, clone the repository and set up your environment. Follow the instructions in the documentation for installation and configuration.
 
-## License
-This project is licensed under the MIT License.
