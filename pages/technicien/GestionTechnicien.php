@@ -116,8 +116,8 @@ if(isset($_POST['modifier'])){
     <ul class="navbar-nav ml-auto">
 
     <li class="nav-item"  >
-      <a class="nav-link" href="./../logout1.php" > Déconnexion </a> 
-       </li>
+    <a class="nav-link" href="../../logout1.php" >Déconnexion</a>
+    </li>
       <!-- Navbar Search -->
       <li class="nav-item">
         <a class="nav-link" data-widget="navbar-search" href="#" role="button">

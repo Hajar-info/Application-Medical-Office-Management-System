@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Hôte : 127.0.0.1
--- Généré le : sam. 19 oct. 2024 à 05:36
+-- Généré le : dim. 20 oct. 2024 à 03:03
 -- Version du serveur : 10.4.24-MariaDB
 -- Version de PHP : 8.1.6
 
@@ -47,7 +47,7 @@ CREATE TABLE `analysemedicale` (
 CREATE TABLE `consultation` (
   `NumConsultation` int(11) NOT NULL,
   `Date_Consultation` date NOT NULL,
-  `Date_Rendez_Vous` date NOT NULL,
+  `Date_Rendez_Vous` time NOT NULL,
   `DescriptConsultation` varchar(50) NOT NULL,
   `NumDossierPat` int(11) NOT NULL,
   `NumIdMedecin` int(11) NOT NULL,
@@ -55,6 +55,13 @@ CREATE TABLE `consultation` (
   `IdTypeConsultation` int(11) NOT NULL,
   `NumSalle` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Déchargement des données de la table `consultation`
+--
+
+INSERT INTO `consultation` (`NumConsultation`, `Date_Consultation`, `Date_Rendez_Vous`, `DescriptConsultation`, `NumDossierPat`, `NumIdMedecin`, `EtatConsultation`, `IdTypeConsultation`, `NumSalle`) VALUES
+(23, '2024-10-10', '04:48:00', 'nothing to sayyyy', 18, 12, 'non paye', 4, 2);
 
 -- --------------------------------------------------------
 
@@ -80,7 +87,8 @@ CREATE TABLE `medecin` (
 
 INSERT INTO `medecin` (`NumIdMedecin`, `NomMedecin`, `PrenomMedecin`, `date_naiss_medecin`, `SpecialiteMedecin`, `email_medecin`, `telephoneMedecin`, `adresseMedecin`, `IdSpecialite`) VALUES
 (12, 'AOUNI', 'LEILA', '1988-05-31', '', 'aouni@gmail.com', '09875422', 'Rabat', 15),
-(13, 'Hakimi', 'Majid', '1975-05-31', '', 'majid@gmail.com', '09875427890', 'Rabat', 18);
+(13, 'Hakimi', 'Majid', '1975-05-31', '', 'majid@gmail.com', '09875427890', 'Rabat', 18),
+(15, 'hala', 'Nahid', '1988-02-17', '', 'nahid@gmail.com', '78990234567', 'str 123', 14);
 
 -- --------------------------------------------------------
 
@@ -167,7 +175,7 @@ CREATE TABLE `patient` (
 --
 
 INSERT INTO `patient` (`NumDossierPat`, `NomPatient`, `PrenomPatient`, `DateNaissPat`, `SexePatient`, `StatutMatriPat`, `ProfessPatient`, `PoidsPatient`, `TensionPatient`, `TemperPatient`, `Teleph1Patient`, `Teleph2Patient`) VALUES
-(18, 'Alami', 'Jasmine', '1999-05-01', '', 'Qartaj Str 39', 'professor', '67KG', '6', '37C', '0987764322', '0982273838'),
+(18, 'Alami', 'Jasmine', '1999-05-01', '', 'Qartaj Str 39', 'professor', '68KG', '6', '37C', '0987764322', '0982273838'),
 (20, 'Han', 'Emiley', '2000-05-24', '', 'Flower str 34', 'Professor', '90KG', '6', '37°C', '0987764322', '0982273838');
 
 -- --------------------------------------------------------
@@ -294,7 +302,7 @@ CREATE TABLE `technicien` (
 --
 
 INSERT INTO `technicien` (`MatricTechnicien`, `NomTechnicien`, `PrenomTechnicien`, `TelephoneTechnicien`) VALUES
-(2, 'aaouni', 'hamid', '09875433');
+(4, 'aouni', 'hamid', '06278798011');
 
 -- --------------------------------------------------------
 
@@ -519,13 +527,13 @@ ALTER TABLE `analysemedicale`
 -- AUTO_INCREMENT pour la table `consultation`
 --
 ALTER TABLE `consultation`
-  MODIFY `NumConsultation` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=19;
+  MODIFY `NumConsultation` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=24;
 
 --
 -- AUTO_INCREMENT pour la table `medecin`
 --
 ALTER TABLE `medecin`
-  MODIFY `NumIdMedecin` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=15;
+  MODIFY `NumIdMedecin` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=16;
 
 --
 -- AUTO_INCREMENT pour la table `medicament`
@@ -543,7 +551,7 @@ ALTER TABLE `ordonnance`
 -- AUTO_INCREMENT pour la table `patient`
 --
 ALTER TABLE `patient`
-  MODIFY `NumDossierPat` int(16) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=23;
+  MODIFY `NumDossierPat` int(16) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=24;
 
 --
 -- AUTO_INCREMENT pour la table `payment`
@@ -579,7 +587,7 @@ ALTER TABLE `specialite`
 -- AUTO_INCREMENT pour la table `technicien`
 --
 ALTER TABLE `technicien`
-  MODIFY `MatricTechnicien` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `MatricTechnicien` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 
 --
 -- AUTO_INCREMENT pour la table `typeanalyse`

@@ -65,8 +65,8 @@ if(isset($_POST['modifier'])){
     Date_Rendez_Vous='$Date_Rendez_Vous',
     DescriptConsultation='$DescriptConsultation',
     NumDossierPat='$NumDossierPat',
-    NumIdMedecin='$NumIdMedecin'
-    NumSalle='$NumSalle'
+    NumIdMedecin='$NumIdMedecin' ,
+    NumSalle='$NumSalle' 
      WHERE NumConsultation='$NumConsultation' ;";
     $resultat=mysqli_query($connexion,$requet);
     header("location:GestionConsultation.php");
