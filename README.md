@@ -1,4 +1,4 @@
-                                   ## Medical-Office-Management-System
+# Medical Office Management System
 This web application helps manage patients in a medical office. It allows users to record consultation observations, prepare prescriptions, and save time with predefined lists of medications and clinical signs. It features separate login areas for secretaries, doctors, and administrators.
 
 ## Overview
@@ -27,4 +27,3 @@ To get started, clone the repository and set up your environment. Follow the ins
 
 ## License
 This project is licensed under the MIT License.
-
